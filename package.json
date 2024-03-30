@@ -1,7 +1,7 @@
 {
   "name": "@ctfever/uuid",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A simple and fast UUID generator for JavaScript.",
   "author": "HoshinoSuzumi <master@uniiem.com>",
   "license": "MIT",
@@ -10,6 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/HoshinoSuzumi/uuid.git"
   },
+  "packageManager": "yarn@1.22.22",
   "main": "dist/index.umd.cjs",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -22,15 +23,16 @@
   },
   "scripts": {
     "build": "vite build && tsc",
-    "publish": "bumpp && npm publish"
+    "publish": "bumpp && npm publish",
+    "test": "vitest"
   },
   "devDependencies": {
-    "@types/node": "^20.12.2",
     "bumpp": "^9.4.0",
     "typescript": "^5.2.2",
-    "vite": "^5.2.0"
+    "vite": "^5.2.0",
+    "vitest": "^1.4.0"
   },
   "dependencies": {
-    "crypto": "^1.0.1"
+    "crypto-browserify": "^3.12.0"
   }
 }
