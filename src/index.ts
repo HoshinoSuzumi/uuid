@@ -1,7 +1,4 @@
-import { uuidV1 } from './uuid';
-
-export {
-  uuidV1
-}
+export { NIL } from './nil';
+export { uuidv4 } from './v4'
 
 export * from './types';
