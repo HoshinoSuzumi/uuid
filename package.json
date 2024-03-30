@@ -25,6 +25,7 @@
     "publish": "bumpp && npm publish"
   },
   "devDependencies": {
+    "@types/node": "^20.12.2",
     "bumpp": "^9.4.0",
     "typescript": "^5.2.2",
     "vite": "^5.2.0"
