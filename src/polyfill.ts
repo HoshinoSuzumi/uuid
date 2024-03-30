@@ -17,7 +17,6 @@ if (!getRandomValues) {
 
 const randomBytes = (size: number, callback?: (err: Error | null, buf: Uint8Array) => void): Uint8Array => {
   if (size > MAX_UINT32) throw new RangeError('The "size" is out of range.')
-  if (!getRandomValues) throw new Error('The Web Crypto API is not available in this environment.')
 
   let bytes = new Uint8Array(size)
   if (size > 0) {
