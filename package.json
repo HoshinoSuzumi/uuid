@@ -1,7 +1,7 @@
 {
   "name": "@ctfever/uuid",
   "type": "module",
-  "version": "0.0.4",
+  "version": "0.0.1",
   "description": "A simple and fast UUID generator for JavaScript.",
   "author": "HoshinoSuzumi <master@uniiem.com>",
   "license": "MIT",
