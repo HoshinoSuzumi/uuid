@@ -21,9 +21,12 @@
       "types": "./dist/index.d.ts"
     }
   },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "vite build && tsc",
-    "publish": "bumpp && npm publish",
+    "release": "bumpp && npm publish",
     "test": "vitest"
   },
   "devDependencies": {
