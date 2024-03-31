@@ -3,6 +3,11 @@
   "type": "module",
   "version": "0.2.0",
   "description": "A simple and fast UUID generator for JavaScript.",
+  "keywords": [
+    "uuid",
+    "generator",
+    "random"
+  ],
   "author": "HoshinoSuzumi <master@uniiem.com>",
   "license": "MIT",
   "homepage": "https://github.com/HoshinoSuzumi/uuid#readme",
