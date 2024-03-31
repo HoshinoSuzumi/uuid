@@ -12,9 +12,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "declaration": true,
-    "declarationMap": true,
     "emitDeclarationOnly": true,
-    "sourceMap": true,
     "outDir": "dist",
 
     /* Linting */

@@ -1,11 +1,12 @@
 import { UUID } from "."
+import { randomBytes } from "./polyfill"
+import { unverifiedStringifyUUID } from "./utils"
 
 const uuidv4 = (): UUID => {
-  return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, (c) => {
-    const r = (Math.random() * 16) | 0
-    const v = c === "x" ? r : (r & 0x3) | 0x8
-    return v.toString(16)
-  }) as UUID
+  let rnds = randomBytes(16)
+  rnds[6] = rnds[6] & 0x0f | 0x40
+  rnds[8] = rnds[8] & 0x3f | 0x80
+  return unverifiedStringifyUUID(rnds)
 }
 
 export { uuidv4 }

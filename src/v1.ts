@@ -9,9 +9,9 @@ let _clock_seq: number
 let _last_millisec: number = 0
 let _last_nanosec: number = 0
 
-const uuidv1 = (options?: UUIDv1Options, buf?: number[], offset?: number): UUID => {
+const uuidv1 = (options?: UUIDv1Options, buf?: Uint8Array, offset?: number): UUID => {
   let i = (buf && offset) || 0
-  const b = buf || new Array(16)
+  const b = buf || new Uint8Array(16)
 
   const seed = options?.seed || randomBytes(16)
   let node = options?.node_id || _node_id || seed.slice(0, 6).map((b, i) => i === 0 ? b | 0x01 : b)
