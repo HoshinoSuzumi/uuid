@@ -4,7 +4,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: 'src/index.ts',
-      name: 'uuid'
+      name: 'uuid',
+      fileName: 'index'
     }
   }
 })
