@@ -2,6 +2,10 @@ name: Publish NPM Package
 
 on:
   workflow_dispatch:
+  workflow_run:
+    workflows: [CI, Release]
+    types:
+      - completed
   release:
     types: [released]
 
