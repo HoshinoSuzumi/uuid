@@ -58,3 +58,11 @@ interface UUIDv1Options {
  */
 const uuidv4: (buf?: Uint8Array, offset?: number) => UUID;
 ```
+
+## Benchmark
+
+```bash
+  name             hz     min     max    mean     p75     p99    p995    p999     rme  samples
+· uuid v1  308,696.40  0.0025  0.8270  0.0032  0.0029  0.0067  0.0126  0.0535  ±1.42%   154349
+· uuid v4  319,743.17  0.0023  8.6766  0.0031  0.0027  0.0069  0.0128  0.0241  ±5.44%   159872
+```

@@ -32,9 +32,12 @@
   "scripts": {
     "build": "vite build && tsc",
     "release": "bumpp && npm publish",
-    "test": "vitest"
+    "test": "vitest",
+    "bench": "vitest bench",
+    "coverage": "vitest run --coverage"
   },
   "devDependencies": {
+    "@vitest/coverage-v8": "^1.4.0",
     "bumpp": "^9.4.0",
     "typescript": "^5.2.2",
     "vite": "^5.2.0",
