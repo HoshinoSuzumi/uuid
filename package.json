@@ -15,7 +15,7 @@
     "type": "git",
     "url": "git+https://github.com/HoshinoSuzumi/uuid.git"
   },
-  "packageManager": "yarn@1.22.22",
+  "packageManager": "npm@9.7.2",
   "main": "dist/index.umd.cjs",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -39,6 +39,5 @@
     "typescript": "^5.2.2",
     "vite": "^5.2.0",
     "vitest": "^1.4.0"
-  },
-  "dependencies": {}
+  }
 }
