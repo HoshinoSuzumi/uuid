@@ -1,9 +1,9 @@
-# @ctfever/uuid
+# @uniiem/uuid
 
 ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/HoshinoSuzumi/uuid/ci.yml)
-![NPM Downloads](https://img.shields.io/npm/dm/%40ctfever%2Fuuid)
-![NPM Version (with dist tag)](https://img.shields.io/npm/v/%40ctfever%2Fuuid/latest)
-![npm bundle size](https://img.shields.io/bundlephobia/min/%40ctfever%2Fuuid)
+![NPM Downloads](https://img.shields.io/npm/dm/%40uniiem%2Fuuid)
+![NPM Version (with dist tag)](https://img.shields.io/npm/v/%40uniiem%2Fuuid/latest)
+![npm bundle size](https://img.shields.io/bundlephobia/min/%40uniiem%2Fuuid)
 ![GitHub License](https://img.shields.io/github/license/HoshinoSuzumi/uuid)
 
 Fast UUID Generator for TypeScript/JavaScript
@@ -11,11 +11,11 @@ Fast UUID Generator for TypeScript/JavaScript
 ## Usage
 
 ```bash
-npm i @ctfever/uuid
+npm i @uniiem/uuid
 ```
 
 ```typescript
-import { NIL, uuidv1, uuidv4 } fromo '@ctfever/uuid';
+import { NIL, uuidv1, uuidv4 } fromo '@uniiem/uuid';
 
 console.log(NIL);       // 00000000-0000-0000-0000-000000000000
 console.log(uuidv1());  // fbc0f1a0-ef67-11ee-9e13-396902bb4dbf
