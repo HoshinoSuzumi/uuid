@@ -33,7 +33,7 @@ console.log(uuidv4());  // 301d3087-1961-41d6-992d-66fe1b5fee49
 const NIL: string;
 ```
 
-### `uuidv1`
+### `uuidv1([options[], buf, offset])`
 
 ```typescript
 /**
@@ -50,13 +50,13 @@ interface UUIDv1Options {
 }
 ```
 
-### `uuidv4`
+### `uuidv4()`
 
 ```typescript
 /**
  * Generate a version 4 UUID.
  */
-const uuidv4: (buf?: Uint8Array, offset?: number) => UUID;
+const uuidv4: () => UUID;
 ```
 
 ## Benchmark
