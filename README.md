@@ -22,7 +22,7 @@ console.log(uuidv1());  // fbc0f1a0-ef67-11ee-9e13-396902bb4dbf
 console.log(uuidv4());  // 301d3087-1961-41d6-992d-66fe1b5fee49
 ```
 
-## API
+## APIs
 
 ### `NIL`
 
